@@ -6,3 +6,12 @@
     font-size: 90px;
     text-align: center;
 }
+
+.letter-solid-cs{
+    font-size: 64px;
+    color: #5b5bef;
+}
+
+.border-solid-cs{
+    border: solid 2px
+}

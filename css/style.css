@@ -38,3 +38,28 @@ body{
     margin-bottom: 20px;
     padding: 8px;
 }
+
+.bold-text {
+    font-weight: bold;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.icon-sm-style{
+    font-size: 70px;
+    color: gray;
+}
+
+.twitter-color{
+    color: #007bff;
+}
+
+.linkedin-color{
+    color: #004085;
+}
+
+.github-color{
+    color: gray;
+}

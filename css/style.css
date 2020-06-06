@@ -1,19 +1,22 @@
 /* Import font css */
 @import url(/css/fonts.css);
 
+/* css variables */ 
+@import url(./partials/_variables.css);
+
 /* style css navigation */ 
 .header_area .main-menu .navbar .navbar-brand{
     padding: 0 2rem 0 2rem;
 }
 
 .header_area .main-menu .nav-item .nav-link{
-    font-family: "Roboto", cursive;
+    font-family: var(--roboto);
     text-transform: uppercase;
     font-weight: 500;
     padding: 1.7rem;
-    color: black;
+    color: var(--title-color);
 }
-/*
+
 .header_area .main-menu .navbar-nav .active a{
     background: var(--gradient-color);
     -webkit-background-clip: text;
@@ -27,7 +30,7 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-*/
+
 /* style css logo */
 .main-menu img {
     border-radius: 4px;

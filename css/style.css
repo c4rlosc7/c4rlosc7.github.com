@@ -1,68 +1,36 @@
 /* Import font css */
 @import url(/css/fonts.css);
 
-body{
-    font-family: 'PT Sans', sans-serif;
-    /*font-family: 'Merriweather', serif;*/
-    /*font-family: 'Roboto Slab', serif;*/
+/* style css navigation */ 
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 0 2rem 0 2rem;
 }
 
-.body-cs{
-    margin: 0 200px;
+.header_area .main-menu .nav-item .nav-link{
+    font-family: "Roboto", cursive;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 1.7rem;
+    color: black;
+}
+/*
+.header_area .main-menu .navbar-nav .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-.margin-top-20 {
-    margin-top: 20px;
+.header_area .main-menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
-
-.title-cs{
-    font-size: 90px;
-    text-align: center;
-}
-
-.letter-solid-cs{
-    font-size: 64px;
-    color: #5b5bef;
-}
-
-.border-solid-cs{
-    border: solid 2px
-}
-
-.icons-info-personal{
-    font-size: 16px;
-    color: #007bff;
-}
-
-.items-style{
-    background-color: #007bff;
-    color: white;
-    font-weight: bold;
-    margin-bottom: 20px;
-    padding: 8px;
-}
-
-.bold-text {
-    font-weight: bold;
-}
-
-.text-center{
-    text-align: center;
-}
-
-.icon-sm-style{
-    font-size: 70px;
-    color: gray;
-}
-
-.twitter-color{
-    color: #007bff;
-}
-
-.linkedin-color{
-    color: #0a70de;
-}
-
-.github-color{
-    color: gray;
-}
+*/
+/* style css logo */
+.main-menu img {
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  }

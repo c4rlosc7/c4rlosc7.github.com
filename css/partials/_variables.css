@@ -1,6 +1,4 @@
-
-
-
+/* --------------------------------- Reset CSS --------------------------------- */
 html, body{
     margin: 0%;
     box-sizing: border-box;
@@ -9,7 +7,7 @@ html, body{
 }
 
 
-/* CSS Variables */ 
+/* --------------------------------- CSS Variables --------------------------------- */ 
 
 :root{
     --primary-color: #4458dc;
@@ -17,11 +15,11 @@ html, body{
     --title-color: #141313;
     --text-color: #777777;  
     --border-color: #201f1f17;  
-    --gradient-color: linear-gradient(90deg, #2c46e9 0%, #5e2bc4 100%);
+    --gradient-color: linear-gradient(90deg, #2c46e9 0%, #4f0dd3 100%);
     --shadow-color:  0px 10px 30px rgba(118, 85, 225, 0.3);
     --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
    
 
-    /* font family variables. */ 
+    /* --------------------------------- font family variables. --------------------------------- */ 
     --roboto: 'Roboto', cursive;
 } 

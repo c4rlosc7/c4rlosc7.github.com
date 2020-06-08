@@ -1,65 +1,136 @@
-body{
-    font-family: 'PT Sans', sans-serif;
-    /*font-family: 'Merriweather', serif;*/
-    /*font-family: 'Roboto Slab', serif;*/
+/* Import font css */
+@import url(/css/fonts.css);
+
+/* css variables */ 
+@import url(./partials/_variables.css);
+
+/* import global styling */ 
+@import url(./partials/_global.css);
+
+/* --------------------------------- style css navigation --------------------------------- */ 
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 0 2rem 0 2rem;
 }
 
-.body-cs{
-    margin: 0 200px;
+.header_area .main-menu .nav-item .nav-link{
+    font: normal 500 15px/2px var(--roboto);
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: var(--title-color);
 }
 
-.margin-top-20 {
-    margin-top: 20px;
+.header_area .main-menu .navbar-nav .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-.title-cs{
-    font-size: 90px;
-    text-align: center;
+.header_area .main-menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-.letter-solid-cs{
-    font-size: 64px;
-    color: #5b5bef;
+/* --------------------------------- style css logo --------------------------------- */
+.main-menu img {
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  }
+
+  /* --------------------------------- Banner Area --------------------------------- */
+.site-main .site-banner .site-title h3{
+    padding-top: 30%;
+    font-weight: 500;
 }
 
-.border-solid-cs{
-    border: solid 2px
+.site-main .site-banner .site-title h3::after{
+    content: " ";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
 }
 
-.icons-info-personal{
-    font-size: 16px;
-    color: #007bff;
+.site-main .site-banner .site-title h1{
+    font-size: 5rem;
 }
 
-.items-style{
-    background-color: #007bff;
-    color: white;
-    font-weight: bold;
-    margin-bottom: 20px;
-    padding: 8px;
+.site-main .site-banner .site-title h4{
+    font-size: 1.5rem;
 }
 
-.bold-text {
-    font-weight: bold;
+.site-main .site-banner .banner-image > img{
+    padding: 7rem 0;
+    width: 350px;
 }
 
-.text-center{
-    text-align: center;
+/* --------------------------------- About Me Area --------------------------------- */ 
+.site-main .about-area{
+    padding: 8rem 5rem;
 }
 
-.icon-sm-style{
-    font-size: 70px;
-    color: gray;
+.site-main .about-area .about-title h2 > span{
+    display: block;
+    font: normal bold 49px/ 60px var(--roboto);
+    letter-spacing: 21px;
 }
 
-.twitter-color{
-    color: #007bff;
+.site-main .about-area .about-title .paragraph > p{
+    padding: .4rem 0;
 }
 
-.linkedin-color{
-    color: #0a70de;
+/* --------------------------------- Services Area --------------------------------- */ 
+.site-main .services-area{
+    padding: 7rem 2rem;
 }
 
-.github-color{
-    color: gray;
+.site-main .services-area .services-title{
+    padding: 0 14rem;
+}
+
+.site-main .services-area .services-title h1{
+    font-size: 35px;
+}
+
+.site-main > .services-area .services{
+    background: rgba(248, 252, 253, 0.973);
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 5rem .5rem;
+    transition: box-shadow .7s ease;
+}
+
+.site-main > .services-area .services:hover{
+    box-shadow: var(--box-shadow);
+}
+
+
+
+
+
+
+
+/* --------------------------------- Footer Area --------------------------------- */ 
+footer.footer-area{
+    padding: 5rem 0;
+    background: url(../img/footer-bg.png) no-repeat;
+}
+
+footer.footer-area .social h5{
+    font: normal 500 23px/ 30px var(--roboto);
+}
+
+footer.footer-area .social a > i{
+    font-size:22px;
+    padding: 2rem;
+    color: var(--border-color);
+}
+
+footer.footer-area .social a:hover > i{
+    color: var(--primary-color);
 }

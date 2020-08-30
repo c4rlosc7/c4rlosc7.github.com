@@ -229,7 +229,8 @@ button:hover
 /* --------------------------------- Footer Area --------------------------------- */ 
 footer.footer-area{
     padding: 5rem 0;
-    background: url(../img/footer-bg.png) no-repeat;
+    background-color: #2c3840;
+    color: white;
 }
 
 footer.footer-area .social h5{
@@ -242,6 +243,10 @@ footer.footer-area .social a > i{
     color: var(--border-color);
 }
 
-footer.footer-area .social a:hover > i{
-    color: var(--primary-color);
+footer.footer-area .social a > i{
+    color: white;
+}
+
+footer.footer-area .copyrights p{
+    color: white;
 }

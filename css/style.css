@@ -178,23 +178,19 @@ button:hover
     padding: 8rem 5rem;
 }
 
-.site-main .about-area .about-title h2 > span{
+.site-main .about-area .st-paragraph h2 > span{
     display: block;
     font: normal bold 49px/ 60px var(--roboto);
     letter-spacing: 21px;
 }
 
-.site-main .about-area .about-title .paragraph > p{
+.site-main .about-area .st-paragraph .paragraph > p{
     padding: .4rem 0;
 }
 
 /* --------------------------------- Services Area --------------------------------- */ 
 .site-main .services-area{
     padding: 7rem 2rem;
-}
-
-.site-main .services-area .services-title{
-    padding: 0 14rem;
 }
 
 .site-main .services-area .services-title h1{

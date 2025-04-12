@@ -1,288 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>c4rlosc7</title>
-    <!--CSS-->
-    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
-    <link rel="stylesheet" href="lib/css/font-awesome.min.css">
-    <link rel="stylesheet" href="lib/css/all.min.css">
-    <link rel="stylesheet" href="lib/css/responsive.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-
-    <!--  Header Area -->
-    <header class="header_area">
-        <div class="main-menu">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#section-home-id">
-                    <!--
-                        <img src="./img/logo_carlos_bg.png" class="rounded float-left" alt="logo">
-                    -->
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="mr-auto"></div>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section-home-id">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about-area-id">about me</a>
-                        </li>
-                        <!--
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills-area-id">skills</a>
-                        </li>
-                        -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#articles-area-id">wiki</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Carlos Martinez</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Carlos Martinez</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-    </header>
-
-    <!--  Main Area -->
-    <main class="site-main">
-        <!--  My Information Area  -->
-        <section class="site-banner" id="section-home-id">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 site-title">
-                        <h3 class="title-text">Hi, I am</h3>
-                        <h1 class="title-text text-uppercase" style="color: #2c3ca7;">Carlos Martinez</h1>
-                        <h4 class="title-text text-uppercase">Developer</h4>
-                        <!--I really like writing code. Especially in Java.-->
-                        <h6>
-                            <!--
-                            <i class="fab fa-java" style="font-size: 40px;"></i>
-                            <i class="fab fa-angular" style="font-size: 40px; color: red;"></i>
-                            <i class="fab fa-js" style="font-size: 40px; color: yellow;"></i>
-                            <i class="fab fa-html5" style="font-size: 40px; color: orangered;"></i>
-                            <i class="fab fa-css3-alt" style="font-size: 40px; color: blue;"></i> </h6>
-                        
-                        <div class="site-buttons">
-                            <div class="d-flex flex-row flex-wrap">
-                                <button type="button" class="btn button primary-button mr-4 text-uppercase">hire me</button>
-                                <button type="button" class="btn button secondary-button text-uppercase">Get cv</button>
-                            </div>
-                        </div>
-                        -->
-                    </div>
-                    <div class="col-lg-6 col-md-12 banner-image">
-                        <img src="./img/myDisplayCarlos.jpeg" alt="banner-img" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--  About Me Area  -->
-        <section class="about-area" id="about-area-id">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 st-paragraph">
-                        <h2 class="text-uppercase pt-5">
-                            <span>Who Am I ?</span>
-                        </h2>
-                        <div class="paragraph py-4 w-75">
-                            <p class="para">
-                                Software developer graduated by "Universidad tecnológica de Pereira". I'm currently
-                                working for Ceiba Software as Software analyst, One of my strong points is that I love
-                                learning new things about software and new technologies and I love sharing that new
-                                knowledge with others.
-                            </p>
-                        </div>
-                        <button type="button" class="btn button primary-button text-uppercase">Download cv</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--  Skills Area  -->
-        <!--
-        <section class="skills-area" id="skills-area-id">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h1 class="text-uppercase title-text pt-5">Skills</h1>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <h5 class="text-uppercase font-roboto">Java</h5>
-                    </div>
-                    <div class="row progress">
-                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 75%;"
-                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <h5 class="text-uppercase font-roboto">Angular</h5>
-                    </div>
-                    <div class="row progress">
-                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 60%;"
-                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <h5 class="text-uppercase font-roboto">JavaScript</h5>
-                    </div>
-                    <div class="row progress">
-                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 70%;"
-                            aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <h5 class="text-uppercase font-roboto">HTML/CSS</h5>
-                    </div>
-                    <div class="row progress">
-                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%;"
-                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        -->
-        <!--  Articles Area  -->
-        <section class="services-area" id="articles-area-id">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 text-left services-title">
-                        <h1 class="text-uppercase title-text">Computer Programming Articles</h1>
-                        <p class="para">
-                            In my free time, I usually research topics in the programming world,
-                            I want to share some that I have written.
-                        </p>
-                    </div>
-                </div>
-                <div class="container-fluid services-list">
-                    <div class="row">
-                        <!--Tips for working from home-->
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="services">
-                                <!--
-                                <div class="sevices-img text-center py-4">
-                                    <img src="./img/pomodoro-logo.png" alt="Pomodoro">
-                                </div>
-                                -->
-                                <div class="card-body text-center">
-                                    <h5 class="card-title text-uppercase font-roboto">Tips for working from home</h5>
-                                    <p class="card-text text-secondary">
-                                        Working from home will become a new reality increasingly present in all
-                                        companies.
-                                        It is a possibility that due to digital transformation allows improving the
-                                        people's quality of life.
-                                    </p>
-                                    <a href="https://dev.to/c4rlosc7/tips-trabajo-en-casa-1h08" target="_blank"
-                                        rel="noopener noreferrer">
-                                        READ MORE
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Pomodoro Technique-->
-                        <!--
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="services">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title text-uppercase font-roboto">Pomodoro Technique</h5>
-                                    <p class="card-text text-secondary">
-                                        The Pomodoro Technique is a time management method developed by Francesco
-                                        Cirillo[1] in the late 1980s.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        -->
-                        <!--Solid Principles-->
-                        <!--
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="services">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title text-uppercase font-roboto">Solid Principles</h5>
-                                    <p class="card-text text-secondary">
-                                        In object-oriented computer programming, SOLID is a mnemonic acronym for five
-                                        design principles intended to make software designs more understandable,
-                                        flexible and maintainable.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        -->
-                        <!--Design Patterns-->
-                        <!--
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="services">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title text-uppercase font-roboto">Design Patterns</h5>
-                                    <p class="card-text text-secondary">
-                                        In software engineering, a software design pattern is a general,
-                                        reusable solution to a commonly occurring problem within a given context in
-                                        software design.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        -->
-                        <!--GitFlow-->
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="services">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title text-uppercase font-roboto">GitFlow</h5>
-                                    <p class="card-text text-secondary">
-                                        Gitflow is a branching model of Git.
-                                    </p>
-                                    <a href="https://dev.to/c4rlosc7/gitflow-workflow-9pg" target="_blank"
-                                        rel="noopener noreferrer">
-                                        READ MORE
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer Area-->
-    <footer class="footer-area">
-        <div class="container">
-            <div class="stContainer">
-                <div class="social text-center">
-                    <h5 class="text-uppercase">Follow me</h5>
-                    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-                    <a href="https://twitter.com/c4rlosc7" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://github.com/c4rlosc7" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-                <div class="copyrights text-center">
-                    <p>
-                        Copyright ©2020 All rights reserved |
-                        <a href="#"><span>Carlos Martinez</span></a>
-                    </p>
-                </div>
-            </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/myDisplayCarlos.jpeg" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">carlos Martinez</h1>
+        <p class="section__text__p2">Software Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/cv_2025.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/carlos-andres-martinez-600412b4/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/c4rlosc7'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/awards.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>8+ years <br />Software Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Systems and computer engineer</p>              
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Software developer graduate by “Universidad Tecnológica de Pereira” 
+              with 8 years of experience in a lot of technologies, especially Java 
+              Spring Framework, Spring Boot, Spring Cloud, Spring JPA, Spring Security, 
+              Angular, React, JavaScript, Typescript, And Python. Using different 
+              testing tools like Junit4, Junit5, Mockito, JMeter, Karma and Jasmine. 
+              Using version control systems like GIT and Practice like Gitflow branch 
+              management. Also experience with different databases like Oracle, 
+              Postgres, MySQL, Amazon RDS, Amazon DynamoDB, Bigtable GCP. All the 
+              web technologies. Worked on different methodologies such as Canvas, 
+              Scrum framework.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
     </footer>
-
-    <!--JavaScript-->
-    <script src="lib/js/jquery-3.5.1.min.js"></script>
-    <script src="lib/js/popper.min.js"></script>
-    <script src="lib/js/bootstrap.min.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
